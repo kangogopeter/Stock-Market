@@ -9,10 +9,12 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.evilstar.stock_market.R;
 import com.evilstar.stock_market.model.Users;
+import com.evilstar.stock_market.prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,6 +24,10 @@ import com.google.firebase.database.ValueEventListener;
 import io.paperdb.Paper;
 
 public class EcommerceActivity extends AppCompatActivity {
+
+    private Button joinNowButton, loginButton;
+
+    ProgressDialog loadingBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

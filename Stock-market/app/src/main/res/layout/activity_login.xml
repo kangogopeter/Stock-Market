@@ -63,12 +63,15 @@
         android:id="@+id/remember_me_chkb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Material.Drawable.CheckBox"
         android:text="Remember me"
+        style="@style/Material.Drawable.CheckBox"
         android:textColor="@color/colorPrimaryDark"
         app:cbd_strokeColor="@color/colorPrimaryDark"
         android:gravity="center_vertical"
         android:textSize="18sp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:layout_marginLeft="17dp"
         />
 
@@ -114,7 +117,8 @@
     android:textStyle="bold"
     android:layout_marginLeft="80dp"
     android:layout_marginEnd="23dp"
-    />
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="23dp" />
 
 
 <TextView
@@ -130,6 +134,6 @@
     android:layout_marginLeft="80dp"
     android:layout_marginStart="25dp"
     android:visibility="invisible"
-    />
+    android:layout_alignParentLeft="true" />
 
 </RelativeLayout>

@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:494543684947:android:1c473c3ba9f956a3",
+        "mobilesdk_app_id": "1:494543684947:android:17b391ad5782856d",
         "android_client_info": {
-          "package_name": "com.evilstar.stock_market.ui"
+          "package_name": "com.evilstar.stock_market"
         }
       },
       "oauth_client": [
         {
-          "client_id": "494543684947-28o0k30rhkgebjrmdpinsvjunlj360c0.apps.googleusercontent.com",
+          "client_id": "494543684947-m8esm683r9nbkmrfv0f2cv3f73vc1dpe.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.evilstar.stock_market.ui",
+            "package_name": "com.evilstar.stock_market",
             "certificate_hash": "46e4b5fee7d6bf6f725f4be7c1d62e7e5c306467"
           }
         },

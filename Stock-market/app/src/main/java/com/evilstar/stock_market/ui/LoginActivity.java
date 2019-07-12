@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.evilstar.stock_market.R;
 import com.evilstar.stock_market.model.Users;
+import com.evilstar.stock_market.prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -47,8 +48,8 @@ public class LoginActivity extends AppCompatActivity {
     loadingBar = new ProgressDialog(this);
 
 
-    chkBoxRememberMe = (CheckBox) findViewById(R.id.remember_me_chkb);
-        Paper.init(this);
+//    chkBoxRememberMe = (CheckBox) findViewById(R.id.remember_me_chkb);
+//        Paper.init(this);
 
 
         LoginButton.setOnClickListener(new View.OnClickListener() {
@@ -113,11 +114,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private void AllowAccessToAccount(final String phone, final String password)
     {
-        if(chkBoxRememberMe.isChecked())
-        {
-            Paper.book().write(Prevalent.UserPhoneKey, phone);
-            Paper.book().write(Prevalent.UserPasswordKey, password);
-        }
+//        if(chkBoxRememberMe.isChecked())
+//        {
+//            Paper.book().write(Prevalent.UserPhoneKey, phone);
+//            Paper.book().write(Prevalent.UserPasswordKey, password);
+//        }
 
 
         final DatabaseReference RootRef;
@@ -149,8 +150,8 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(LoginActivity.this, "logged in Successfully...", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-                                Prevalent.currentOnlineUser = usersData;
+                                Intent intent = new Intent(LoginActivity.this, AdminAddNewProductActivity.class);
+                              //  Prevalent.currentOnlineUser = usersData;
                                 startActivity(intent);
                             }
                         }
